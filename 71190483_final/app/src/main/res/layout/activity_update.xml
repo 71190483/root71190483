@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="@drawable/bgcolor"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/tvUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Buku"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edtUpdateJudul"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+        android:hint="Judul Buku"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edtUpdatePenulis"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtUpdateJudul"
+        android:hint="Penulis"/>
+
+    <EditText
+        android:id="@+id/edtUpdatePenerbit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtUpdatePenulis"
+        android:hint="Penerbit"/>
+
+    <EditText
+        android:id="@+id/edtUpdateHalaman"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtUpdatePenerbit"
+        android:hint="Jumlah Halaman"/>
+
+    <EditText
+        android:id="@+id/edtUpdateTahun"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtUpdateHalaman"
+        android:hint="Tahun Rilis"/>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Update"
+        android:textAlignment="center"
+        android:backgroundTint="@color/bgbt"
+        android:layout_below="@+id/edtUpdateTahun"/>
+
+
+</RelativeLayout>

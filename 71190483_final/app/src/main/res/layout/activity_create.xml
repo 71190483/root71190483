@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bgcolor"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Book Data"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edtJudul"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+        android:hint="Judul Buku"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edtPenulis"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtJudul"
+        android:hint="Penulis" />
+
+    <EditText
+        android:id="@+id/edtPenerbit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtPenulis"
+        android:hint="Nama Penerbit"/>
+
+    <EditText
+        android:id="@+id/edtHalaman"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtPenerbit"
+        android:hint="Jumlah Halaman"/>
+
+    <EditText
+        android:id="@+id/edtTahun"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_email_password"
+
+        android:drawablePadding="12dp"
+        android:backgroundTint="@color/bgbt"
+
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/edtHalaman"
+        android:hint="Tahun Rilis" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTahun"
+        android:backgroundTint="@color/bgbt"
+        android:text="Save" />
+
+
+
+
+
+
+</RelativeLayout>
